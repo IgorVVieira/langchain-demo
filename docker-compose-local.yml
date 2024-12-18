@@ -1,0 +1,30 @@
+services:
+  localstack:
+    container_name: chat-infra
+    image: localstack/localstack
+    ports:
+
+      - '4566:4566'
+      - '4571:4571'
+      - '8056:8080'
+    environment:
+      - SERVICES=dynamodb,s3
+      - DEBUG=1
+    volumes:
+      - localstack_data:/var/lib/localstack
+      - /var/run/docker.sock:/var/run/docker.sock
+
+  db:
+    image: ankane/pgvector
+    ports:
+      - 5432:5432
+    volumes:
+      - db:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_PASSWORD=user
+      - POSTGRES_USER=user
+      # - POSTGRES_DB=user
+
+volumes:
+  localstack_data:
+  db:

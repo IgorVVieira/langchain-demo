@@ -1,0 +1,11 @@
+Característica,Pinecone,Chroma
+Tipo de Serviço,Serviço gerenciado (cloud),Local ou cloud (auto-hospedado ou na nuvem)
+Escalabilidade,Altamente escalável (bilhões de vetores),Escalável para volumes pequenos a médios
+Performance,"Alta performance, otimizado para grandes volumes",Boa performance para aplicações pequenas a médias
+Modelo de Preços,Freemium (com plano gratuito limitado) e pago,Open-source (gratuito) ou pago para cloud gerenciada
+Suporte a Metadados,Sim (filtros avançados por metadados),Sim (indexação e filtragem por metadados)
+Persistência,Armazenamento persistente (com backups automáticos),Armazenamento local ou em cloud (persistente)
+Integração com LangChain,"Nativa, bem integrada","Nativa, bem integrada"
+Facilidade de Uso,Simples de configurar e começar a usar,"API simples, ideal para projetos locais e médios"
+Casos de Uso Comuns,"Busca semântica em grande escala, RAG, NLP, IA","Aplicações de IA e NLP, projetos experimentais"
+Infraestrutura,Infraestrutura totalmente gerenciada e escalável,Pode ser gerenciada localmente ou em ambientes cloud
